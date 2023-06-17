@@ -73,6 +73,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.FutbolcularTableAdapter = new Football_Club.Futbol_BilgiDataSet5TableAdapters.FutbolcularTableAdapter();
+            this.btnyso = new DevExpress.XtraEditors.SimpleButton();
+            this.lblgrupadi = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.FutbolcularBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Futbol_BilgiDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -110,7 +112,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 151);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1318, 550);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1374, 550);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -123,7 +125,7 @@
             this.xtraTabPage1.Controls.Add(this.gridControl1);
             this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1316, 506);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1372, 506);
             this.xtraTabPage1.Text = "SPORCULAR";
             this.xtraTabPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage1_Paint);
             // 
@@ -134,7 +136,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1316, 510);
+            this.gridControl1.Size = new System.Drawing.Size(1372, 560);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -499,9 +501,9 @@
             // 
             this.xtraTabPage2.Controls.Add(this.reportViewer1);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
-            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1316, 506);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1372, 506);
             this.xtraTabPage2.Text = "RAPOR AL";
             // 
             // reportViewer1
@@ -513,12 +515,10 @@
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Football_Club.Formlar.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1316, 506);
+            this.reportViewer1.Size = new System.Drawing.Size(1372, 506);
             this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
-            this.reportViewer1.ZoomPercent = 75;
             // 
             // ribbonControl1
             // 
@@ -526,20 +526,20 @@
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
+            this.ribbonControl1.SearchEditItem,
             this.barButtonItem1,
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
             this.barButtonItem5,
-            this.barButtonItem6,
-            this.ribbonControl1.SearchEditItem});
+            this.barButtonItem6});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 247;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1203, 156);
+            this.ribbonControl1.Size = new System.Drawing.Size(1400, 156);
             // 
             // barButtonItem1
             // 
@@ -599,7 +599,7 @@
             this.btnA.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnA.Appearance.Options.UseBackColor = true;
             this.btnA.Appearance.Options.UseFont = true;
-            this.btnA.Location = new System.Drawing.Point(10, 72);
+            this.btnA.Location = new System.Drawing.Point(10, 81);
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(89, 44);
             this.btnA.TabIndex = 11;
@@ -612,7 +612,7 @@
             this.btnB.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnB.Appearance.Options.UseBackColor = true;
             this.btnB.Appearance.Options.UseFont = true;
-            this.btnB.Location = new System.Drawing.Point(102, 72);
+            this.btnB.Location = new System.Drawing.Point(102, 81);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(89, 44);
             this.btnB.TabIndex = 12;
@@ -625,7 +625,7 @@
             this.btnC.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnC.Appearance.Options.UseBackColor = true;
             this.btnC.Appearance.Options.UseFont = true;
-            this.btnC.Location = new System.Drawing.Point(196, 72);
+            this.btnC.Location = new System.Drawing.Point(196, 81);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(89, 44);
             this.btnC.TabIndex = 13;
@@ -638,7 +638,7 @@
             this.btnD.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnD.Appearance.Options.UseBackColor = true;
             this.btnD.Appearance.Options.UseFont = true;
-            this.btnD.Location = new System.Drawing.Point(289, 72);
+            this.btnD.Location = new System.Drawing.Point(289, 81);
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(89, 44);
             this.btnD.TabIndex = 14;
@@ -653,8 +653,8 @@
             this.panel1.Controls.Add(this.radioortasaha);
             this.panel1.Controls.Add(this.radiodefans);
             this.panel1.Controls.Add(this.radiokaleci);
-            this.panel1.Location = new System.Drawing.Point(428, 56);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(590, 69);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(592, 72);
             this.panel1.TabIndex = 16;
@@ -730,7 +730,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(309, 708);
+            this.labelControl2.Location = new System.Drawing.Point(303, 745);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(32, 37);
             this.labelControl2.TabIndex = 18;
@@ -740,7 +740,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(8, 708);
+            this.labelControl1.Location = new System.Drawing.Point(2, 745);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(295, 37);
             this.labelControl1.TabIndex = 19;
@@ -750,11 +750,37 @@
             // 
             this.FutbolcularTableAdapter.ClearBeforeFill = true;
             // 
+            // btnyso
+            // 
+            this.btnyso.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.btnyso.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnyso.Appearance.Options.UseBackColor = true;
+            this.btnyso.Appearance.Options.UseFont = true;
+            this.btnyso.Location = new System.Drawing.Point(384, 81);
+            this.btnyso.Name = "btnyso";
+            this.btnyso.Size = new System.Drawing.Size(147, 44);
+            this.btnyso.TabIndex = 21;
+            this.btnyso.Text = "YAZ SPOR OKULU";
+            this.btnyso.Click += new System.EventHandler(this.btnyso_Click);
+            // 
+            // lblgrupadi
+            // 
+            this.lblgrupadi.Appearance.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblgrupadi.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lblgrupadi.Appearance.Options.UseFont = true;
+            this.lblgrupadi.Appearance.Options.UseForeColor = true;
+            this.lblgrupadi.Location = new System.Drawing.Point(659, 723);
+            this.lblgrupadi.Name = "lblgrupadi";
+            this.lblgrupadi.Size = new System.Drawing.Size(0, 65);
+            this.lblgrupadi.TabIndex = 23;
+            // 
             // frmkadro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 687);
+            this.ClientSize = new System.Drawing.Size(1400, 809);
+            this.Controls.Add(this.lblgrupadi);
+            this.Controls.Add(this.btnyso);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnD);
@@ -831,5 +857,7 @@
         private System.Windows.Forms.BindingSource FutbolcularBindingSource;
         private Futbol_BilgiDataSet5 Futbol_BilgiDataSet5;
         private Futbol_BilgiDataSet5TableAdapters.FutbolcularTableAdapter FutbolcularTableAdapter;
+        private DevExpress.XtraEditors.SimpleButton btnyso;
+        private DevExpress.XtraEditors.LabelControl lblgrupadi;
     }
 }

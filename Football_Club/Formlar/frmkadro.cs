@@ -87,6 +87,7 @@ namespace Football_Club
 
         private void frmkadro_Load(object sender, EventArgs e)
         {
+            
             // TODO: This line of code loads data into the 'Futbol_BilgiDataSet5.Futbolcular' table. You can move, or remove it, as needed.
             this.FutbolcularTableAdapter.Fill(this.Futbol_BilgiDataSet5.Futbolcular);
             futbolculistele();
@@ -173,7 +174,7 @@ namespace Football_Club
             adapt.Fill(table);
             gridControl1.DataSource = table;
             bgl.baglanti().Close();
-
+            lblgrupadi.Text = btnA.Text;
 
             //sqlbaglantisi bgl = new sqlbaglantisi();
             SqlCommand komut = new SqlCommand("Select Count(id) As 'Toplam Sayi' from Futbolcular WHERE Grup='A'", bgl.baglanti());
@@ -194,6 +195,7 @@ namespace Football_Club
             adapta.Fill(tablea);
             gridControl1.DataSource = tablea;
             bglB.baglanti().Close();
+            lblgrupadi.Text = btnB.Text;
 
             SqlCommand komut = new SqlCommand("Select Count(id) As 'Toplam Sayi' from Futbolcular where Grup='B'", bglB.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
@@ -215,6 +217,7 @@ namespace Football_Club
             SqlDataAdapter adapt = new SqlDataAdapter("Select * from Futbolcular where Grup='C' order by Adi asc", bglC.baglanti());
             adapt.Fill(tablec);
             gridControl1.DataSource = tablec;
+            lblgrupadi.Text = btnC.Text;
             bglC.baglanti().Close();
 
             SqlCommand komut = new SqlCommand("Select Count(id) As 'Toplam Sayi' from Futbolcular where Grup='C'", bglC.baglanti());
@@ -233,6 +236,7 @@ namespace Football_Club
             SqlDataAdapter adaptd = new SqlDataAdapter("Select * from Futbolcular where Grup='D' order by Adi asc", bgld.baglanti());
             adaptd.Fill(tabled);
             gridControl1.DataSource = tabled;
+            lblgrupadi.Text = btnD.Text;
             bgld.baglanti().Close();
 
             SqlCommand komut = new SqlCommand("Select Count(id) As 'Toplam Sayi' from Futbolcular where Grup='D'", bgld.baglanti());
@@ -346,6 +350,25 @@ namespace Football_Club
         private void xtraTabPage1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnyso_Click(object sender, EventArgs e)
+        {
+            sqlbaglantisi bgld = new sqlbaglantisi();
+            DataTable tabled = new DataTable();
+            SqlDataAdapter adaptd = new SqlDataAdapter("Select * from Futbolcular where Grup='Yaz Spor Okulları' order by Adi asc", bgld.baglanti());
+            adaptd.Fill(tabled);
+            gridControl1.DataSource = tabled;
+            lblgrupadi.Text = btnyso.Text;
+            bgld.baglanti().Close();
+
+            SqlCommand komut = new SqlCommand("Select Count(id) As 'Toplam Sayi' from Futbolcular where Grup='Yaz Spor Okulları'", bgld.baglanti());
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                labelControl2.Text = oku[0].ToString();
+            }
+            bgld.baglanti().Close();
         }
     }
 }

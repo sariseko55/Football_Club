@@ -22,15 +22,15 @@ namespace Football_Club
         {
             InitializeComponent();
         }
-        
+
         private void frmanasayfa_Load(object sender, EventArgs e)
         {
 
-           
+
 
             //boy ortalamalarını listeleme.
             sqlbaglantisi bgl = new sqlbaglantisi();
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand komutportalamaboy = new SqlCommand("select AVG(Boy) AS 'Ortalama Boy' from Futbolcular ", bgl.baglanti());
             SqlDataReader drortalamaboy = komutportalamaboy.ExecuteReader();
             while (drortalamaboy.Read())
@@ -40,7 +40,7 @@ namespace Football_Club
             bgl.baglanti().Close();
 
             //takımdaki toplam oyuncu sayısını futbolcular tablosundan Count ile alma,
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand toplamfutbolcu = new SqlCommand("select Count(id) AS 'Toplam Sayi' from Futbolcular ", bgl.baglanti());
             SqlDataReader drtoplamfutbolcu = toplamfutbolcu.ExecuteReader();
             while (drtoplamfutbolcu.Read())
@@ -51,8 +51,8 @@ namespace Football_Club
             bgl.baglanti().Close();
 
             // kilo ortalamasını alma
-            bgl.baglanti().Open();
-            SqlCommand komkilo= new SqlCommand("select AVG(Kilo) AS 'Ortalama Kilo'  from Futbolcular ", bgl.baglanti());
+            //bgl.baglanti().Open();
+            SqlCommand komkilo = new SqlCommand("select AVG(Kilo) AS 'Ortalama Kilo'  from Futbolcular ", bgl.baglanti());
             SqlDataReader drkilo = komkilo.ExecuteReader();
             while (drkilo.Read())
             {
@@ -61,7 +61,7 @@ namespace Football_Club
             bgl.baglanti().Close();
 
             //toplam kaleci sayısını alma
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand toplamkaleci = new SqlCommand("select count (id) from Futbolcular where Mevki='Kaleci' ", bgl.baglanti());
             SqlDataReader drtoplamkaleci = toplamkaleci.ExecuteReader();
             while (drtoplamkaleci.Read())
@@ -72,7 +72,7 @@ namespace Football_Club
             bgl.baglanti().Close();
 
             //Defans sayısını alma;
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand toplamdefans = new SqlCommand("select count (id) from Futbolcular where Mevki='STOPER' or Mevki='SOL STOPER' or Mevki='SAĞ STOPER' or Mevki='SOL BEK' or Mevki='SAĞ BEK' ", bgl.baglanti());
             SqlDataReader drtoplamdefans = toplamdefans.ExecuteReader();
             while (drtoplamdefans.Read())
@@ -83,7 +83,7 @@ namespace Football_Club
             bgl.baglanti().Close();
 
             //toplam ortasahalar
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand toplamortasaha = new SqlCommand("select count (id) from Futbolcular where Mevki='ORTASAHA MERKEZ' or Mevki='ORTASAHA SAĞ' or Mevki='ORTASAHA SOL' or Mevki='10 NUMARA' or Mevki='SAĞ FORVET' or Mevki='SOL FORVET'", bgl.baglanti());
             SqlDataReader toplamortasaha2 = toplamortasaha.ExecuteReader();
             while (toplamortasaha2.Read())
@@ -93,9 +93,7 @@ namespace Football_Club
 
             bgl.baglanti().Close();
 
-
-
-            bgl.baglanti().Open();
+            //bgl.baglanti().Open();
             SqlCommand toplamforvet = new SqlCommand("select count (id) from Futbolcular where Mevki='FORVET'", bgl.baglanti());
             SqlDataReader toplamforvet2 = toplamforvet.ExecuteReader();
             while (toplamforvet2.Read())
@@ -105,19 +103,15 @@ namespace Football_Club
 
             bgl.baglanti().Close();
 
-           
             //baglanti1.Open();
             //DataTable dt= new DataTable();
             //SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi, DogumTarihi from Futbolcular order by DogumTarihi desc",baglanti1);
             //da.Fill(dt);
             //gridControl1.DataSource = dt;
-
-
-           
-            //SqlCommand com = new SqlCommand(); 
+                                    //SqlCommand com = new SqlCommand(); 
             // com.CommandText = "SELECT Adi,Soyadi,DogumTarihi FROM Futbolcular WHERE DAY(dtarih) = DAY(GETDATE()) AND MONTH(dtarih) = MONTH(GETDATE())";
             // SqlDataReader dr = com.ExecuteReader(); 
-           
+
             //DataSet ds;
 
             //DateTime tarih = DateTime.Now;
@@ -126,7 +120,6 @@ namespace Football_Club
             //lblzaman.Text = tarih.ToLongDateString();
             //labelControl4.Text = dr["DogumGunu"].ToString();
 
-
         }
 
 
@@ -134,14 +127,14 @@ namespace Football_Club
 
 
 
-    
-public  Control bunifuCards1 { get; set; }
-public Control bunifuCircleProgress { get; set; }
 
-private void bunifuProgressBar1_progressChanged(object sender, EventArgs e)
-{
+        public Control bunifuCards1 { get; set; }
+        public Control bunifuCircleProgress { get; set; }
 
-}
+        private void bunifuProgressBar1_progressChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

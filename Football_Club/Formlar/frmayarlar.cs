@@ -25,6 +25,7 @@ namespace Football_Club.Formlar
                 takimekle = new frmtakimekle();
                 //takimekle.MdiParent = this;
                 takimekle.Show();
+                this.Hide();
             }
         }
     }

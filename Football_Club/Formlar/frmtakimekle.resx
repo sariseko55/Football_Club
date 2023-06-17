@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="simpleButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="simpleButton4.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAzVJREFUWEftVklrFEEYbTc8uOEa1JjunhkiCF70pIiiREFwA5mLuKBCIHgSFLzo
+        vwAADr8BOAVTJAAAAzVJREFUWEftVklrFEEYbTc8uOEa1JjunhkiCF70pIiiREFwA5mLuKBCIHgSFLzo
         eBAU9OAwXZWExPUiBv9EIN5UFCQQD4KgRonIdHVPBEnSvq/yVc8kmSQdZ3LLg6K7X33Lq+qvFmsBtSCT
         LzW6Msg6IjzS3Kk2MD0/cAvBTleoPBL2b+8eWkWcLdQpfEfUHBE80obzBSToM8nc9uAwcbYMj8acVG3E
         4T1b5srNkepNkyyuJZvEyOTHlvOrRUl1IKF+4JnVXFfQkBL+RXC3Mh3FtOaqC+htuD+4gvoTA05ZRwYD
@@ -138,10 +138,10 @@
         zuc/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="simpleButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="simpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAzVJREFUWEftVklrFEEYbTc8uOEa1JjunhkiCF70pIiiREFwA5mLuKBCIHgSFLzo
+        vwAADr8BOAVTJAAAAzVJREFUWEftVklrFEEYbTc8uOEa1JjunhkiCF70pIiiREFwA5mLuKBCIHgSFLzo
         eBAU9OAwXZWExPUiBv9EIN5UFCQQD4KgRonIdHVPBEnSvq/yVc8kmSQdZ3LLg6K7X33Lq+qvFmsBtSCT
         LzW6Msg6IjzS3Kk2MD0/cAvBTleoPBL2b+8eWkWcLdQpfEfUHBE80obzBSToM8nc9uAwcbYMj8acVG3E
         4T1b5srNkepNkyyuJZvEyOTHlvOrRUl1IKF+4JnVXFfQkBL+RXC3Mh3FtOaqC+htuD+4gvoTA05ZRwYD
@@ -158,10 +158,10 @@
         zuc/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="simpleButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="simpleButton2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAexJREFUWEftlk1LAlEUhv1To5sI0iiyFq4K+iACEQtXZgQqkbmooDauW7Rp0Y9w
+        vwAADr8BOAVTJAAAAexJREFUWEftlk1LAlEUhv1To5sI0iiyFq4K+iACEQtXZgQqkbmooDauW7Rp0Y9w
         UT+gNhFFrcIsP2rjjI6lnuaOZ3Q+zpGsgRb5wrO65z3vuVdn5npGGomSEvBFZL90W/N7m3LAC79B76H1
         0ghj+8FS/FKUauQGYmMYw0ufljC7xA3G8NKOrE0YXaHml1oYw4syugnG8KJMAmVhDpq5Y3LNTCMRA3l6
         jFwTYAwvylRfCkHn7h6g8g6f52cgT/ocNYJm7kivaV1egDI7TtZgDC/K1NhYAygU9eaCj9MTR426vwtQ
@@ -172,10 +172,10 @@
         AWkRYwZLv5YHvI/2Bj9Hevj2tXykfyaP5wuiotNMG0WqiAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="simpleButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAnFJREFUWEfNV81LFVEUf5sWYbQr6z+QFuKd6RNaSKAgtg+Eti2SyIVQkdjHxp2b
+        vwAADr8BOAVTJAAAAnFJREFUWEfNV81LFVEUf5sWYbQr6z+QFuKd6RNaSKAgtg+Eti2SyIVQkdjHxp2b
         2jyX6r2DRttAmjujLVpFZC4qHmqJYh9kPrXyKfg8Z97B18wcxzcf8vrBjwdvzvn9ztx7595zc3HRPDF8
         0tBWu2GrHuGM3kEajrxt2qqt5dXYCQrLFsbUyGmh5UMw+mQ4qhxFodUH+H1wzh0/RenJccFWjSCYB+NS
         0OhgyhLmogbJxYPpyssg9C0sHI/CkV/FS3mJZGsDJHbDkG8HxZKyoiVvknw0hLauG1rucEKpiJra6iIb
@@ -188,10 +188,10 @@
         B/NN/ggUcgM+0R+seBS1/I65qEFyyYEXzbiX08R3woOQ7fU8l9sFCWLSFNRKrVwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="simpleButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="simpleButton5.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAexJREFUWEftlk1LAlEUhv1To5sI0iiyFq4K+iACEQtXZgQqkbmooDauW7Rp0Y9w
+        vwAADr8BOAVTJAAAAexJREFUWEftlk1LAlEUhv1To5sI0iiyFq4K+iACEQtXZgQqkbmooDauW7Rp0Y9w
         UT+gNhFFrcIsP2rjjI6lnuaOZ3Q+zpGsgRb5wrO65z3vuVdn5npGGomSEvBFZL90W/N7m3LAC79B76H1
         0ghj+8FS/FKUauQGYmMYw0ufljC7xA3G8NKOrE0YXaHml1oYw4syugnG8KJMAmVhDpq5Y3LNTCMRA3l6
         jFwTYAwvylRfCkHn7h6g8g6f52cgT/ocNYJm7kivaV1egDI7TtZgDC/K1NhYAygU9eaCj9MTR426vwtQ

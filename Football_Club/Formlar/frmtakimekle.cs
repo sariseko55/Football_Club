@@ -21,9 +21,8 @@ namespace Football_Club
         bool durum;
         void mukerrer()
         {
-            SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-            baglanti.Open();
-            SqlCommand komut1 = new SqlCommand("Select * from Takimlar where TakimAdi=@p1", baglanti);
+            sqlbaglantisi bgl = new sqlbaglantisi();
+            SqlCommand komut1 = new SqlCommand("Select * from Takimlar where TakimAdi=@p1", bgl.baglanti());
             komut1.Parameters.AddWithValue("@p1", txttakım.Text);
             SqlDataReader dr = komut1.ExecuteReader();
             if (dr.Read())
@@ -36,26 +35,24 @@ namespace Football_Club
             }
         }
 
-           
 
-            public void listele()
+
+        public void listele()
         {
-            SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-            baglanti.Open();
+            sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from Takimlar order by TakimAdi asc", baglanti);
+            SqlDataAdapter da = new SqlDataAdapter("Select * from Takimlar order by TakimAdi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             txttakım.Text = "";
         }
 
-            public static string takimkayit = "";
+        public static string takimkayit = "";
         private void frmtakimekle_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-            baglanti.Open();
+            sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select id,TakimAdi from Takimlar order by TakimAdi asc", baglanti);
+            SqlDataAdapter da = new SqlDataAdapter("Select id,TakimAdi from Takimlar order by TakimAdi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             txttakım.Text = "";
@@ -64,26 +61,25 @@ namespace Football_Club
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-             SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-            baglanti.Open();
+            sqlbaglantisi bgl = new sqlbaglantisi();
             DialogResult dialog = new DialogResult();
             dialog = MessageBox.Show("Seçtiğiniz takımı listeden silmek istediğinizden emin misiniz?", "Bilgi Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                SqlCommand sil = new SqlCommand("Delete from Takimlar where TakimAdi=@TakimAdi", baglanti);
+                SqlCommand sil = new SqlCommand("Delete from Takimlar where TakimAdi=@TakimAdi", bgl.baglanti());
                 sil.Parameters.AddWithValue("@TakimAdi", txttakım.Text);
                 if (sil.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show(txttakım.Text+ " " +"Takımı Listeden Silindi.", "Bilgi Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(txttakım.Text + " " + "Takımı Listeden Silindi.", "Bilgi Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 listele();
                 txttakım.Text = "";
             }
         }
-         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
-            if (dr!=null)
+            if (dr != null)
             {
                 txttakım.Text = dr["TakimAdi"].ToString();
                 //textEdit1.Text = dr["id"].ToString();
@@ -94,10 +90,9 @@ namespace Football_Club
             mukerrer();
             if (durum == true)
             {
-                SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-                baglanti.Open();
+                sqlbaglantisi bgl = new sqlbaglantisi();
 
-                SqlCommand ekle = new SqlCommand("insert into Takimlar (TakimAdi) Values(@p1)", baglanti);
+                SqlCommand ekle = new SqlCommand("insert into Takimlar (TakimAdi) Values(@p1)", bgl.baglanti());
                 ekle.Parameters.AddWithValue("@p1", txttakım.Text.ToString());
 
                 if (ekle.ExecuteNonQuery() > 0)
@@ -106,7 +101,7 @@ namespace Football_Club
                     txttakım.Text = "";
                 }
             }
-            if (durum==false)
+            if (durum == false)
             {
                 MessageBox.Show(txttakım.Text + " " + "takımını daha önce listeye eklediniz!\n Lütfen başka takım ekleyiniz...", "Mükerrer Kayıt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -117,15 +112,14 @@ namespace Football_Club
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection("Server=.; Database=Futbol_Bilgi; integrated security=true");
-            baglanti.Open();
-            SqlCommand guncelle = new SqlCommand("Update Takimlar set TakimAdi=@p1 where id=@p2", baglanti);
+            sqlbaglantisi bgl = new sqlbaglantisi();
+            SqlCommand guncelle = new SqlCommand("Update Takimlar set TakimAdi=@p1 where id=@p2", bgl.baglanti());
             guncelle.Parameters.AddWithValue("@p1", txttakım.Text);
-            guncelle.Parameters.AddWithValue("@p2", textEdit1.Text);
-            if (guncelle.ExecuteNonQuery() >0 )
+            guncelle.Parameters.AddWithValue("@p2", textEdit1.Text.ToString());
+            if (guncelle.ExecuteNonQuery() > 0)
             {
                 MessageBox.Show("Seçilen takım güncellemesi yapılmıştır!", "Bilgi Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
             }
             listele();
             txttakım.Text = "";
@@ -144,6 +138,16 @@ namespace Football_Club
         private void txttakım_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_FocusedRowChanged_1(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            { 
+                txttakım.Text = dr["TakimAdi"].ToString();
+                textEdit1.Text = dr["id"].ToString();
+            } 
         }
     }
 }

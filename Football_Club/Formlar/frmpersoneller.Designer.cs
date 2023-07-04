@@ -29,17 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpersoneller));
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkoyuncu = new System.Windows.Forms.CheckBox();
-            this.checkmacveperformans = new System.Windows.Forms.CheckBox();
-            this.checkfutsal = new System.Windows.Forms.CheckBox();
-            this.checkcocuk = new System.Windows.Forms.CheckBox();
-            this.scheckplaj = new System.Windows.Forms.CheckBox();
-            this.checkyoneticilik = new System.Windows.Forms.CheckBox();
-            this.checkfutsalb = new System.Windows.Forms.CheckBox();
-            this.checkgonullu = new System.Windows.Forms.CheckBox();
-            this.checkatletik = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.txtlisansno = new System.Windows.Forms.TextBox();
             this.cmbgorev = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,6 +41,7 @@
             this.cmbelge = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtmail = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.mskdogumtarihi = new System.Windows.Forms.MaskedTextBox();
             this.msktelefon = new System.Windows.Forms.MaskedTextBox();
@@ -64,136 +59,39 @@
             this.bunifuFlatButton2 = new ns1.BunifuFlatButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtlisans2 = new System.Windows.Forms.TextBox();
-            this.groupBox3.SuspendLayout();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.SeaGreen;
-            this.groupBox3.Controls.Add(this.checkoyuncu);
-            this.groupBox3.Controls.Add(this.checkmacveperformans);
-            this.groupBox3.Controls.Add(this.checkfutsal);
-            this.groupBox3.Controls.Add(this.checkcocuk);
-            this.groupBox3.Controls.Add(this.scheckplaj);
-            this.groupBox3.Controls.Add(this.checkyoneticilik);
-            this.groupBox3.Controls.Add(this.checkfutsalb);
-            this.groupBox3.Controls.Add(this.checkgonullu);
-            this.groupBox3.Controls.Add(this.checkatletik);
-            this.groupBox3.Enabled = false;
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(22, 234);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(591, 245);
-            this.groupBox3.TabIndex = 125;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Lisans Belgesi";
-            // 
-            // checkoyuncu
-            // 
-            this.checkoyuncu.AutoSize = true;
-            this.checkoyuncu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkoyuncu.Location = new System.Drawing.Point(272, 82);
-            this.checkoyuncu.Name = "checkoyuncu";
-            this.checkoyuncu.Size = new System.Drawing.Size(282, 25);
-            this.checkoyuncu.TabIndex = 0;
-            this.checkoyuncu.Text = "Oyuncu ve Maç İzleme Antrenörlüğü";
-            this.checkoyuncu.UseVisualStyleBackColor = true;
-            // 
-            // checkmacveperformans
-            // 
-            this.checkmacveperformans.AutoSize = true;
-            this.checkmacveperformans.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkmacveperformans.Location = new System.Drawing.Point(272, 42);
-            this.checkmacveperformans.Name = "checkmacveperformans";
-            this.checkmacveperformans.Size = new System.Drawing.Size(196, 25);
-            this.checkmacveperformans.TabIndex = 0;
-            this.checkmacveperformans.Text = "Maç Analizi Antrenörlğü";
-            this.checkmacveperformans.UseVisualStyleBackColor = true;
-            // 
-            // checkfutsal
-            // 
-            this.checkfutsal.AutoSize = true;
-            this.checkfutsal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkfutsal.Location = new System.Drawing.Point(10, 162);
-            this.checkfutsal.Name = "checkfutsal";
-            this.checkfutsal.Size = new System.Drawing.Size(195, 25);
-            this.checkfutsal.TabIndex = 0;
-            this.checkfutsal.Text = "TFF Futsal Antrenörlüğü";
-            this.checkfutsal.UseVisualStyleBackColor = true;
-            // 
-            // checkcocuk
-            // 
-            this.checkcocuk.AutoSize = true;
-            this.checkcocuk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkcocuk.Location = new System.Drawing.Point(10, 82);
-            this.checkcocuk.Name = "checkcocuk";
-            this.checkcocuk.Size = new System.Drawing.Size(129, 25);
-            this.checkcocuk.TabIndex = 0;
-            this.checkcocuk.Text = "Çocuk Futbolu";
-            this.checkcocuk.UseVisualStyleBackColor = true;
-            // 
-            // scheckplaj
-            // 
-            this.scheckplaj.AutoSize = true;
-            this.scheckplaj.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.scheckplaj.Location = new System.Drawing.Point(10, 202);
-            this.scheckplaj.Name = "scheckplaj";
-            this.scheckplaj.Size = new System.Drawing.Size(208, 25);
-            this.scheckplaj.TabIndex = 0;
-            this.scheckplaj.Text = "Plaj Futbolu Antrenörlüğü";
-            this.scheckplaj.UseVisualStyleBackColor = true;
-            // 
-            // checkyoneticilik
-            // 
-            this.checkyoneticilik.AutoSize = true;
-            this.checkyoneticilik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkyoneticilik.Location = new System.Drawing.Point(272, 162);
-            this.checkyoneticilik.Name = "checkyoneticilik";
-            this.checkyoneticilik.Size = new System.Drawing.Size(238, 25);
-            this.checkyoneticilik.TabIndex = 0;
-            this.checkyoneticilik.Text = "Profesyonel Futbol Yöneticiliği";
-            this.checkyoneticilik.UseVisualStyleBackColor = true;
-            // 
-            // checkfutsalb
-            // 
-            this.checkfutsalb.AutoSize = true;
-            this.checkfutsalb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkfutsalb.Location = new System.Drawing.Point(272, 122);
-            this.checkfutsalb.Name = "checkfutsalb";
-            this.checkfutsalb.Size = new System.Drawing.Size(220, 25);
-            this.checkfutsalb.TabIndex = 0;
-            this.checkfutsalb.Text = "UEFA Futsal B Antrenörlüğü\r\n";
-            this.checkfutsalb.UseVisualStyleBackColor = true;
-            // 
-            // checkgonullu
-            // 
-            this.checkgonullu.AutoSize = true;
-            this.checkgonullu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkgonullu.Location = new System.Drawing.Point(10, 122);
-            this.checkgonullu.Name = "checkgonullu";
-            this.checkgonullu.Size = new System.Drawing.Size(167, 25);
-            this.checkgonullu.TabIndex = 0;
-            this.checkgonullu.Text = "TFF Gönüllü Liderlik";
-            this.checkgonullu.UseVisualStyleBackColor = true;
-            // 
-            // checkatletik
-            // 
-            this.checkatletik.AutoSize = true;
-            this.checkatletik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkatletik.Location = new System.Drawing.Point(10, 42);
-            this.checkatletik.Name = "checkatletik";
-            this.checkatletik.Size = new System.Drawing.Size(254, 25);
-            this.checkatletik.TabIndex = 0;
-            this.checkatletik.Text = "Atletik Performans Antrenörlüğü";
-            this.checkatletik.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.txtid);
             this.groupBox1.Controls.Add(this.txtlisansno);
             this.groupBox1.Controls.Add(this.cmbgorev);
             this.groupBox1.Controls.Add(this.label8);
@@ -201,6 +99,7 @@
             this.groupBox1.Controls.Add(this.cmbelge);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtmail);
+            this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.mskdogumtarihi);
             this.groupBox1.Controls.Add(this.msktelefon);
@@ -213,12 +112,52 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(22, 12);
+            this.groupBox1.Location = new System.Drawing.Point(0, 241);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(591, 216);
+            this.groupBox1.Size = new System.Drawing.Size(591, 438);
             this.groupBox1.TabIndex = 123;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(124, 222);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(306, 30);
+            this.label21.TabIndex = 136;
+            this.label21.Text = "Ekleyeceğiniz Belgelerin Arasına / (Ayraç) İşareti Koyunuz\r\nÖrn: Maç ve Performan" +
+    "s Analizi / Plaj Futbolu Ant.";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(126, 259);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(448, 54);
+            this.richTextBox1.TabIndex = 135;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label20.Location = new System.Drawing.Point(511, 407);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(32, 21);
+            this.label20.TabIndex = 134;
+            this.label20.Text = "ID :";
+            // 
+            // txtid
+            // 
+            this.txtid.Enabled = false;
+            this.txtid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtid.Location = new System.Drawing.Point(547, 403);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(38, 29);
+            this.txtid.TabIndex = 133;
             // 
             // txtlisansno
             // 
@@ -269,7 +208,7 @@
             // 
             this.cmbelge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbelge.FormattingEnabled = true;
-            this.cmbelge.Location = new System.Drawing.Point(397, 89);
+            this.cmbelge.Location = new System.Drawing.Point(397, 94);
             this.cmbelge.Name = "cmbelge";
             this.cmbelge.Size = new System.Drawing.Size(177, 29);
             this.cmbelge.TabIndex = 128;
@@ -278,7 +217,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(334, 90);
+            this.label7.Location = new System.Drawing.Point(334, 95);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 21);
             this.label7.TabIndex = 127;
@@ -287,20 +226,32 @@
             // txtmail
             // 
             this.txtmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtmail.Location = new System.Drawing.Point(397, 122);
+            this.txtmail.Location = new System.Drawing.Point(397, 132);
             this.txtmail.Name = "txtmail";
             this.txtmail.Size = new System.Drawing.Size(177, 29);
             this.txtmail.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label19.Location = new System.Drawing.Point(47, 259);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(73, 21);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "Belgeler :";
+            this.label19.Click += new System.EventHandler(this.label5_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(325, 125);
+            this.label5.Location = new System.Drawing.Point(325, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 21);
             this.label5.TabIndex = 11;
             this.label5.Text = "e-posta :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // mskdogumtarihi
             // 
@@ -418,7 +369,7 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 70D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(320, 496);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(303, 687);
             this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(33)))), ((int)(((byte)(6)))));
@@ -455,7 +406,7 @@
             this.bunifuFlatButton5.IconVisible = true;
             this.bunifuFlatButton5.IconZoom = 70D;
             this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(462, 496);
+            this.bunifuFlatButton5.Location = new System.Drawing.Point(445, 687);
             this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(192)))));
@@ -492,7 +443,7 @@
             this.btnguncelle.IconVisible = true;
             this.btnguncelle.IconZoom = 70D;
             this.btnguncelle.IsTab = false;
-            this.btnguncelle.Location = new System.Drawing.Point(178, 496);
+            this.btnguncelle.Location = new System.Drawing.Point(161, 687);
             this.btnguncelle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Normalcolor = System.Drawing.Color.BurlyWood;
@@ -529,7 +480,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 70D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(36, 496);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(19, 687);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(120)))));
@@ -546,70 +497,393 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(630, 12);
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(745, 216);
+            this.gridControl1.Size = new System.Drawing.Size(1378, 235);
             this.gridControl1.TabIndex = 130;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.Turquoise;
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.LightGray;
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.OptionsCustomization.AllowColumnMoving = false;
+            this.gridView1.OptionsCustomization.AllowColumnResizing = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn1.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "id";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 37;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn2.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn2.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn2.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn2.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn2.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn2.Caption = "ADI";
+            this.gridColumn2.FieldName = "Adi";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 83;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn3.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn3.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn3.Caption = "SOYADI";
+            this.gridColumn3.FieldName = "Soyadi";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowEdit = false;
+            this.gridColumn3.OptionsColumn.ReadOnly = true;
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 89;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn4.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn4.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn4.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn4.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn4.Caption = "GÖREVİ";
+            this.gridColumn4.FieldName = "Gorevi";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.OptionsColumn.ReadOnly = true;
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 92;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn5.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn5.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn5.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn5.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn5.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn5.Caption = "ANTRENÖR BELGESİ";
+            this.gridColumn5.FieldName = "Belge";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowEdit = false;
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.Width = 146;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn6.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn6.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn6.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn6.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn6.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn6.Caption = "DOGUM T.";
+            this.gridColumn6.FieldName = "DogumTarihi";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.Width = 90;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn7.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn7.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn7.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn7.Caption = "TC";
+            this.gridColumn7.FieldName = "TC";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 7;
+            this.gridColumn7.Width = 87;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn8.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn8.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn8.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn8.Caption = "TELEFON";
+            this.gridColumn8.FieldName = "Telefon";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.OptionsColumn.ReadOnly = true;
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 6;
+            this.gridColumn8.Width = 109;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn9.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn9.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn9.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn9.Caption = "MAİL ADRESİ";
+            this.gridColumn9.FieldName = "Mail";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
+            this.gridColumn9.OptionsColumn.ReadOnly = true;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
+            this.gridColumn9.Width = 141;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn10.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.gridColumn10.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn10.AppearanceHeader.BackColor = System.Drawing.Color.Red;
+            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn10.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn10.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn10.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn10.Caption = "DİĞER BELGELER";
+            this.gridColumn10.FieldName = "Belge2";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowEdit = false;
+            this.gridColumn10.OptionsColumn.ReadOnly = true;
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 9;
+            this.gridColumn10.Width = 421;
             // 
             // txtlisans2
             // 
             this.txtlisans2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtlisans2.Location = new System.Drawing.Point(48, 570);
+            this.txtlisans2.Location = new System.Drawing.Point(31, 761);
             this.txtlisans2.Name = "txtlisans2";
             this.txtlisans2.Size = new System.Drawing.Size(548, 29);
             this.txtlisans2.TabIndex = 131;
             this.txtlisans2.Visible = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(924, 484);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 21);
+            this.label10.TabIndex = 134;
+            this.label10.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(1009, 484);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 21);
+            this.label11.TabIndex = 134;
+            this.label11.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(1078, 484);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 21);
+            this.label12.TabIndex = 134;
+            this.label12.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(1147, 484);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 21);
+            this.label13.TabIndex = 134;
+            this.label13.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(1216, 484);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 21);
+            this.label14.TabIndex = 134;
+            this.label14.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(924, 515);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 21);
+            this.label15.TabIndex = 134;
+            this.label15.Visible = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(1009, 515);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 21);
+            this.label16.TabIndex = 134;
+            this.label16.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(1078, 515);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 21);
+            this.label17.TabIndex = 134;
+            this.label17.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(1147, 515);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(0, 21);
+            this.label18.TabIndex = 134;
+            this.label18.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(769, 252);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(474, 497);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 135;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmpersoneller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 650);
+            this.ClientSize = new System.Drawing.Size(1378, 802);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtlisans2);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.bunifuFlatButton4);
             this.Controls.Add(this.bunifuFlatButton5);
             this.Controls.Add(this.btnguncelle);
             this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmpersoneller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmpersoneller";
             this.Load += new System.EventHandler(this.frmpersoneller_Load);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkoyuncu;
-        private System.Windows.Forms.CheckBox checkmacveperformans;
-        private System.Windows.Forms.CheckBox checkfutsal;
-        private System.Windows.Forms.CheckBox checkcocuk;
-        private System.Windows.Forms.CheckBox scheckplaj;
-        private System.Windows.Forms.CheckBox checkyoneticilik;
-        private System.Windows.Forms.CheckBox checkfutsalb;
-        private System.Windows.Forms.CheckBox checkgonullu;
-        private System.Windows.Forms.CheckBox checkatletik;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtmail;
         private System.Windows.Forms.Label label5;
@@ -636,5 +910,30 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtlisans2;
         private System.Windows.Forms.TextBox txtlisansno;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private System.Windows.Forms.Label label21;
     }
 }

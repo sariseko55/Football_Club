@@ -37,6 +37,7 @@
             this.bunifuFlatButton1 = new ns1.BunifuFlatButton();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.bunifuFlatButton10 = new ns1.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton15 = new ns1.BunifuFlatButton();
@@ -44,11 +45,9 @@
             this.bunifuFlatButton13 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton12 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton7 = new ns1.BunifuFlatButton();
-            this.bunifuFlatButton5 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton4 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton3 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton2 = new ns1.BunifuFlatButton();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -150,7 +149,6 @@
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton13);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton12);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton7);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton5);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton4);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton3);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton2);
@@ -167,6 +165,18 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(216, 726);
             this.bunifuGradientPanel1.TabIndex = 5;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(119, 709);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(94, 14);
+            this.labelControl1.TabIndex = 20;
+            this.labelControl1.Text = "Serkan Eyüpoglu";
             // 
             // bunifuFlatButton10
             // 
@@ -189,7 +199,7 @@
             this.bunifuFlatButton10.IconVisible = true;
             this.bunifuFlatButton10.IconZoom = 90D;
             this.bunifuFlatButton10.IsTab = false;
-            this.bunifuFlatButton10.Location = new System.Drawing.Point(0, 447);
+            this.bunifuFlatButton10.Location = new System.Drawing.Point(0, 400);
             this.bunifuFlatButton10.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton10.Name = "bunifuFlatButton10";
             this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
@@ -272,7 +282,7 @@
             this.bunifuFlatButton14.IconVisible = true;
             this.bunifuFlatButton14.IconZoom = 90D;
             this.bunifuFlatButton14.IsTab = false;
-            this.bunifuFlatButton14.Location = new System.Drawing.Point(0, 591);
+            this.bunifuFlatButton14.Location = new System.Drawing.Point(0, 544);
             this.bunifuFlatButton14.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton14.Name = "bunifuFlatButton14";
             this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
@@ -308,7 +318,7 @@
             this.bunifuFlatButton13.IconVisible = true;
             this.bunifuFlatButton13.IconZoom = 90D;
             this.bunifuFlatButton13.IsTab = false;
-            this.bunifuFlatButton13.Location = new System.Drawing.Point(0, 543);
+            this.bunifuFlatButton13.Location = new System.Drawing.Point(0, 496);
             this.bunifuFlatButton13.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton13.Name = "bunifuFlatButton13";
             this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
@@ -344,7 +354,7 @@
             this.bunifuFlatButton12.IconVisible = true;
             this.bunifuFlatButton12.IconZoom = 90D;
             this.bunifuFlatButton12.IsTab = false;
-            this.bunifuFlatButton12.Location = new System.Drawing.Point(4, 495);
+            this.bunifuFlatButton12.Location = new System.Drawing.Point(4, 448);
             this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
@@ -380,7 +390,7 @@
             this.bunifuFlatButton7.IconVisible = true;
             this.bunifuFlatButton7.IconZoom = 90D;
             this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 399);
+            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 352);
             this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
@@ -394,42 +404,6 @@
             this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton7.Click += new System.EventHandler(this.bunifuFlatButton7_Click);
-            // 
-            // bunifuFlatButton5
-            // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "TAKTİK";
-            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton5.Iconimage")));
-            this.bunifuFlatButton5.Iconimage_right = null;
-            this.bunifuFlatButton5.Iconimage_right_Selected = null;
-            this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 0;
-            this.bunifuFlatButton5.IconMarginRight = 0;
-            this.bunifuFlatButton5.IconRightVisible = true;
-            this.bunifuFlatButton5.IconRightZoom = 0D;
-            this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 90D;
-            this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 351);
-            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(216, 48);
-            this.bunifuFlatButton5.TabIndex = 8;
-            this.bunifuFlatButton5.Text = "TAKTİK";
-            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
             // 
             // bunifuFlatButton4
             // 
@@ -539,18 +513,6 @@
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(119, 709);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(94, 14);
-            this.labelControl1.TabIndex = 20;
-            this.labelControl1.Text = "Serkan Eyüpoglu";
-            // 
             // frmanamodul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,7 +549,6 @@
         private ns1.BunifuFlatButton bunifuFlatButton13;
         private ns1.BunifuFlatButton bunifuFlatButton12;
         private ns1.BunifuFlatButton bunifuFlatButton7;
-        private ns1.BunifuFlatButton bunifuFlatButton5;
         private ns1.BunifuFlatButton bunifuFlatButton4;
         private ns1.BunifuFlatButton bunifuFlatButton3;
         private ns1.BunifuFlatButton bunifuFlatButton2;

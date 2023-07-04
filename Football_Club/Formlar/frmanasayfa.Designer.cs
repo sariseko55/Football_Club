@@ -82,6 +82,8 @@
             this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
@@ -131,8 +133,6 @@
             this.labelControl61 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl62 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl63 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
@@ -151,6 +151,8 @@
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -166,8 +168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltoplamoyuncu
@@ -204,7 +204,7 @@
             this.pictureEdit2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureEdit2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(188, 68);
+            this.pictureEdit2.Location = new System.Drawing.Point(218, 73);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -221,7 +221,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(106, 141);
+            this.labelControl5.Location = new System.Drawing.Point(101, 141);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(27, 24);
             this.labelControl5.TabIndex = 4;
@@ -245,7 +245,7 @@
             this.lblboy.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblboy.Appearance.Options.UseFont = true;
             this.lblboy.Appearance.Options.UseForeColor = true;
-            this.lblboy.Location = new System.Drawing.Point(91, 49);
+            this.lblboy.Location = new System.Drawing.Point(86, 49);
             this.lblboy.Name = "lblboy";
             this.lblboy.Size = new System.Drawing.Size(51, 86);
             this.lblboy.TabIndex = 2;
@@ -253,13 +253,13 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(193, 120);
+            this.labelControl4.Location = new System.Drawing.Point(27, 67);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(20, 50);
+            this.labelControl4.Size = new System.Drawing.Size(10, 25);
             this.labelControl4.TabIndex = 28;
             this.labelControl4.Text = "..";
             // 
@@ -269,11 +269,12 @@
             this.lblzaman.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lblzaman.Appearance.Options.UseFont = true;
             this.lblzaman.Appearance.Options.UseForeColor = true;
-            this.lblzaman.Location = new System.Drawing.Point(90, 142);
+            this.lblzaman.Location = new System.Drawing.Point(101, 144);
             this.lblzaman.Name = "lblzaman";
             this.lblzaman.Size = new System.Drawing.Size(56, 23);
             this.lblzaman.TabIndex = 26;
             this.lblzaman.Text = "Bugün";
+            this.lblzaman.Click += new System.EventHandler(this.lblzaman_Click);
             // 
             // labelControl13
             // 
@@ -494,7 +495,7 @@
             this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl14.Appearance.Options.UseFont = true;
             this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(84, 49);
+            this.labelControl14.Location = new System.Drawing.Point(78, 49);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(68, 86);
             this.labelControl14.TabIndex = 25;
@@ -518,7 +519,7 @@
             this.labelControl17.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl17.Appearance.Options.UseFont = true;
             this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Location = new System.Drawing.Point(120, 141);
+            this.labelControl17.Location = new System.Drawing.Point(114, 141);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(22, 24);
             this.labelControl17.TabIndex = 24;
@@ -533,7 +534,7 @@
             this.panel5.Controls.Add(this.labelControl18);
             this.panel5.Location = new System.Drawing.Point(1136, 6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(190, 193);
+            this.panel5.Size = new System.Drawing.Size(211, 193);
             this.panel5.TabIndex = 42;
             // 
             // pictureEdit3
@@ -641,11 +642,11 @@
             this.labelControl27.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl27.Appearance.Options.UseFont = true;
             this.labelControl27.Appearance.Options.UseForeColor = true;
-            this.labelControl27.Location = new System.Drawing.Point(39, 23);
+            this.labelControl27.Location = new System.Drawing.Point(39, 21);
             this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(174, 21);
+            this.labelControl27.Size = new System.Drawing.Size(160, 21);
             this.labelControl27.TabIndex = 14;
-            this.labelControl27.Text = "Yaklaşan Doğum Günü";
+            this.labelControl27.Text = "Bugün Doğum Günü ";
             // 
             // panel8
             // 
@@ -766,7 +767,7 @@
             this.panel10.Controls.Add(this.labelControl37);
             this.panel10.Location = new System.Drawing.Point(1136, 205);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(190, 193);
+            this.panel10.Size = new System.Drawing.Size(211, 193);
             this.panel10.TabIndex = 42;
             // 
             // pictureEdit8
@@ -829,6 +830,21 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(275, 193);
             this.panel11.TabIndex = 38;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(0, 29);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(272, 164);
+            this.gridControl1.TabIndex = 1;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // labelControl12
             // 
@@ -1323,7 +1339,7 @@
             this.panel19.Controls.Add(this.labelControl60);
             this.panel19.Location = new System.Drawing.Point(1136, 404);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(190, 193);
+            this.panel19.Size = new System.Drawing.Size(211, 193);
             this.panel19.TabIndex = 42;
             // 
             // pictureEdit13
@@ -1386,7 +1402,7 @@
             this.panel20.Controls.Add(this.labelControl63);
             this.panel20.Location = new System.Drawing.Point(1136, 603);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(190, 193);
+            this.panel20.Size = new System.Drawing.Size(211, 193);
             this.panel20.TabIndex = 42;
             // 
             // pictureEdit14
@@ -1439,21 +1455,6 @@
             this.labelControl63.Size = new System.Drawing.Size(22, 24);
             this.labelControl63.TabIndex = 24;
             this.labelControl63.Text = "kg";
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 29);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(272, 164);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
             // 
             // frmanasayfa
             // 
@@ -1514,6 +1515,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -1538,8 +1541,6 @@
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using Football_Club.Raporlar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,15 +19,11 @@ namespace Football_Club.Formlar
             InitializeComponent();
         }
 
-        raporformu fr;
+       
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            if (fr==null || fr.IsDisposed)
-            {
-                fr = new raporformu();
-                fr.Show();
-            
-            }
+           XtraReport1 report1 = new XtraReport1();
+            report1.ShowPreview();
             
         }
 
@@ -34,15 +32,13 @@ namespace Football_Club.Formlar
 
         }
 
-        frmesamerapor fresame;
+        
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            if (fresame == null || fr.IsDisposed)
-            {
-                fresame = new frmesamerapor();
-                fresame.Show();
+           EsameListesi esamem = new EsameListesi();
+            esamem.ShowPreview();
 
-            }
+            
         }
     }
 }

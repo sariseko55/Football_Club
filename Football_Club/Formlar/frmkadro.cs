@@ -23,7 +23,7 @@ namespace Football_Club
         {
             sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Telefon,Mevki,Boy,Kilo,Mail,Notlar from Futbolcular order by Adi asc", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Telefon,Mevki,Boy,Kilo,Mail,Notlar,VeliAd,VeliTel from Futbolcular order by Adi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             bgl.baglanti().Close();
@@ -37,7 +37,7 @@ namespace Football_Club
         {
             sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo from Futbolcular where Mevki like '%" + "Kaleci" + "%' order by Adi asc", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo,VeliAd,VeliTel from Futbolcular where Mevki like '%" + "Kaleci" + "%' order by Adi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             bgl.baglanti().Close();
@@ -46,7 +46,7 @@ namespace Football_Club
         void defanslistele()
         {
             sqlbaglantisi bgl = new sqlbaglantisi();
-            SqlDataAdapter adap2 = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo from Futbolcular where Mevki ='STOPER' OR Mevki='SOL STOPER' OR Mevki='SAĞ STOPER'OR Mevki='SAĞ BEK'OR Mevki='SOL BEK' order by Adi asc", bgl.baglanti());
+            SqlDataAdapter adap2 = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo,VeliAd,VeliTel from Futbolcular where Mevki ='STOPER' OR Mevki='SOL STOPER' OR Mevki='SAĞ STOPER'OR Mevki='SAĞ BEK'OR Mevki='SOL BEK' order by Adi asc", bgl.baglanti());
             DataTable dt2 = new DataTable();
             adap2.Fill(dt2);
             gridControl1.DataSource = dt2;
@@ -56,7 +56,7 @@ namespace Football_Club
         {
             sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo from Futbolcular where Mevki='ORTASAHA MERKEZ' OR Mevki='ORTASAHA SAĞ' or Mevki='ORTASAHA SOL' or Mevki='10 NUMARA' or Mevki='SAĞ FORVET' or Mevki='SOL FORVET' or Mevki='10 NUMARA' order by Adi asc", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo,VeliAd,VeliTel from Futbolcular where Mevki='ORTASAHA MERKEZ' OR Mevki='ORTASAHA SAĞ' or Mevki='ORTASAHA SOL' or Mevki='10 NUMARA' or Mevki='SAĞ FORVET' or Mevki='SOL FORVET' or Mevki='10 NUMARA' order by Adi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             bgl.baglanti().Close();
@@ -66,7 +66,7 @@ namespace Football_Club
         {
             sqlbaglantisi bgl = new sqlbaglantisi();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo from Futbolcular where Mevki ='FORVET' or Mevki='SOL FORVET' OR Mevki='SAĞ FORVET' order by Adi asc", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi,DogumTarihi,Mevki,Boy,Kilo,VeliAd,VeliTel from Futbolcular where Mevki ='FORVET' or Mevki='SOL FORVET' OR Mevki='SAĞ FORVET' order by Adi asc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             bgl.baglanti().Close();
@@ -105,8 +105,6 @@ namespace Football_Club
             kolon.OptionsColumn.AllowEdit = false;
             kolon.OptionsColumn.AllowFocus = false;
             radiotumsporcular.Checked = true;
-
-
 
             this.reportViewer1.RefreshReport();
         }

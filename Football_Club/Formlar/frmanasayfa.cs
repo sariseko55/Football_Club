@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.IO;
 using BunifuAnimatorNS;
 using Football_Club.Formlar;
+using DevExpress.DataProcessing.InMemoryDataProcessor;
+using System.Security.Cryptography;
 //using System.Drawing;
 
 
@@ -25,7 +27,17 @@ namespace Football_Club
 
         private void frmanasayfa_Load(object sender, EventArgs e)
         {
+           
+            sqlbaglantisi bgldogum = new sqlbaglantisi();
+            SqlCommand cmddogum = new SqlCommand("SELECT Adi, Soyadi, DogumTarihi FROM Futbolcular WHERE DAY(DogumTarihi) = DAY(GETDATE()+15) AND MONTH(DogumTarihi) = MONTH(GETDATE()) ", bgldogum.baglanti());
+            SqlDataReader dogumreader = cmddogum.ExecuteReader();
+           
+            while (dogumreader.Read())
+            {
 
+                labelControl4.Text = dogumreader[0].ToString() + "\n" + dogumreader[1].ToString() + "\n" + dogumreader["DogumTarihi"].ToString();
+
+            }
 
 
             //boy ortalamalarını listeleme.
@@ -108,7 +120,7 @@ namespace Football_Club
             //SqlDataAdapter da = new SqlDataAdapter("Select Adi,Soyadi, DogumTarihi from Futbolcular order by DogumTarihi desc",baglanti1);
             //da.Fill(dt);
             //gridControl1.DataSource = dt;
-                                    //SqlCommand com = new SqlCommand(); 
+            //SqlCommand com = new SqlCommand(); 
             // com.CommandText = "SELECT Adi,Soyadi,DogumTarihi FROM Futbolcular WHERE DAY(dtarih) = DAY(GETDATE()) AND MONTH(dtarih) = MONTH(GETDATE())";
             // SqlDataReader dr = com.ExecuteReader(); 
 
@@ -132,6 +144,11 @@ namespace Football_Club
         public Control bunifuCircleProgress { get; set; }
 
         private void bunifuProgressBar1_progressChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblzaman_Click(object sender, EventArgs e)
         {
 
         }

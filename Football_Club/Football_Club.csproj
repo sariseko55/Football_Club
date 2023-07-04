@@ -11,6 +11,8 @@
     <AssemblyName>Football_Club</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,10 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -123,17 +123,17 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Formlar\BunifuCircleProgress.cs" />
-    <Compile Include="Formlar\frmanamodul.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\frmanamodul.Designer.cs">
-      <DependentUpon>frmanamodul.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formlar\frmajanda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\frmajanda.Designer.cs">
       <DependentUpon>frmajanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmanamodul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmanamodul.Designer.cs">
+      <DependentUpon>frmanamodul.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\frmanasayfa.cs">
       <SubType>Form</SubType>
@@ -189,23 +189,11 @@
     <Compile Include="Formlar\frmsporcukayit.Designer.cs">
       <DependentUpon>frmsporcukayit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formlar\frmtacticpad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\frmtacticpad.Designer.cs">
-      <DependentUpon>frmtacticpad.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formlar\frmtakimekle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\frmtakimekle.Designer.cs">
       <DependentUpon>frmtakimekle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formlar\frmturnuvaekle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\frmturnuvaekle.Designer.cs">
-      <DependentUpon>frmturnuvaekle.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\raporformu.cs">
       <SubType>Form</SubType>
@@ -243,6 +231,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Futbol_BilgiDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Futbol_BilgiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Futbol_BilgiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Futbol_BilgiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Futbol_BilgiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Futbol_BilgiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Futbol_BilgiDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PrintRibbonControllerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -271,11 +274,11 @@
     <EmbeddedResource Include="..\..\Futbol_Bilgi_Kayıt.resx">
       <DependentUpon>Futbol_Bilgi_Kayıt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\frmanamodul.resx">
-      <DependentUpon>frmanamodul.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\frmajanda.resx">
       <DependentUpon>frmajanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmanamodul.resx">
+      <DependentUpon>frmanamodul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\frmanasayfa.resx">
       <DependentUpon>frmanasayfa.cs</DependentUpon>
@@ -304,14 +307,8 @@
     <EmbeddedResource Include="Formlar\frmsporcukayit.resx">
       <DependentUpon>frmsporcukayit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\frmtacticpad.resx">
-      <DependentUpon>frmtacticpad.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\frmtakimekle.resx">
       <DependentUpon>frmtakimekle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\frmturnuvaekle.resx">
-      <DependentUpon>frmturnuvaekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\raporformu.resx">
       <DependentUpon>raporformu.cs</DependentUpon>
@@ -407,6 +404,39 @@
     </None>
     <None Include="Futbol_BilgiDataSet5.xss">
       <DependentUpon>Futbol_BilgiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet6.xsc">
+      <DependentUpon>Futbol_BilgiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Futbol_BilgiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Futbol_BilgiDataSet6.xss">
+      <DependentUpon>Futbol_BilgiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet7.xsc">
+      <DependentUpon>Futbol_BilgiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Futbol_BilgiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Futbol_BilgiDataSet7.xss">
+      <DependentUpon>Futbol_BilgiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet8.xsc">
+      <DependentUpon>Futbol_BilgiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Futbol_BilgiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Futbol_BilgiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Futbol_BilgiDataSet8.xss">
+      <DependentUpon>Futbol_BilgiDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

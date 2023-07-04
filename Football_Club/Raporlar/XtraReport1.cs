@@ -11,6 +11,8 @@ namespace Football_Club.Raporlar
     {
         public string ad;
         sqlbaglantisi bgl = new sqlbaglantisi();
+
+        [Obsolete]
         public XtraReport1()
         {
             InitializeComponent();

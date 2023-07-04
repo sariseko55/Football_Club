@@ -31,7 +31,7 @@ namespace Football_Club
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void accordionControl1_Click(object sender, EventArgs e)
@@ -113,16 +113,16 @@ namespace Football_Club
             //}
         }
 
-        frmajanda ajandam;
-        private void accordionControlElement10_Click(object sender, EventArgs e)
-        {
-            //if (ajandam==null||ajandam.IsDisposed)
-            //{
-            //    ajandam = new frmajanda();
-            //    ajandam.MdiParent = this;
-            //    ajandam.Show();
-            //}
-        }
+        //frmajandam ajandam;
+        //private void accordionControlElement10_Click(object sender, EventArgs e)
+        //{
+        //    if (ajandam == null || ajandam.IsDisposed)
+        //    {
+        //        ajandam = new frmajandam();
+        //        ajandam.MdiParent = this;
+        //        ajandam.Show();
+        //    }
+        //}
 
         frmtakimekle takimekle;
         private void accordionControlElement32_Click(object sender, EventArgs e)
@@ -244,17 +244,7 @@ namespace Football_Club
             }
         }
 
-        frmtacticpad tactical;
-        private void bunifuFlatButton5_Click(object sender, EventArgs e)
-        {
-            if (tactical == null || tactical.IsDisposed)
-            {
-                tactical = new frmtacticpad();
-                tactical.MdiParent = this;
-                tactical.Show();
 
-            }
-        }
 
         private void accordionControlElement17_Click(object sender, EventArgs e)
         {
@@ -272,16 +262,7 @@ namespace Football_Club
             }
 
         }
-        //frmajanda ajandam;
-        private void bunifuFlatButton12_Click(object sender, EventArgs e)
-        {
-            if (ajandam == null || ajandam.IsDisposed)
-            {
-                ajandam = new frmajanda();
-                ajandam.MdiParent = this;
-                ajandam.Show();
-            }
-        }
+
         frmayarlar frayar;
         private void bunifuFlatButton13_Click(object sender, EventArgs e)
         {
@@ -325,20 +306,29 @@ namespace Football_Club
 
         }
 
+        frmajanda ajandam;
+        private void bunifuFlatButton12_Click(object sender, EventArgs e)
+        {
+            if (ajandam == null || ajandam.IsDisposed)
+            {
+                ajandam = new frmajanda();
+                ajandam.MdiParent = this;
+                ajandam.Show();
+            }
 
+        }
 
-
-
-
-        //}
-        //frmraporgoruntule goruntule;
-        //private void accordionControlElement17_Click(object sender, EventArgs e);
-        //{
-        //    goruntule = new frmraporgoruntule();
-        //    goruntule.Show();
-        //}
-
-
-        //public object tactical { get; set; }
     }
+
+    //}
+    //frmraporgoruntule goruntule;
+    //private void accordionControlElement17_Click(object sender, EventArgs e);
+    //{
+    //    goruntule = new frmraporgoruntule();
+    //    goruntule.Show();
+    //}
+
+
+    //public object tactical { get; set; }
+
 }
